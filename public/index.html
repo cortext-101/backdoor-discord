@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Discord Clone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="sidebar">
+    <h2>Servers</h2>
+    <div id="servers"></div>
+    <input id="newServer" placeholder="New Server"><button onclick="createServer()">+</button>
+
+    <h3>Channels</h3>
+    <div id="channels"></div>
+    <input id="newChannel" placeholder="New Channel"><button onclick="createChannel()">+</button>
+  </div>
+
+  <div id="chat">
+    <div id="messages"></div>
+    <input id="msg" placeholder="Message"><button onclick="sendMessage()">Send</button>
+  </div>
+
+  <div id="video">
+    <button onclick="startScreenShare()">Screen Share</button>
+    <video id="screen" autoplay></video>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="client.js"></script>
+</body>
+</html>
