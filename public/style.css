@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  display: flex;
+  height: 100vh;
+  background: #2f3136;
+  color: white;
+}
+
+#sidebar {
+  width: 220px;
+  background: #202225;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#chat {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#messages {
+  flex: 1;
+  overflow-y: auto;
+  background: #36393f;
+  padding: 10px;
+}
+
+input, button {
+  padding: 8px;
+  margin: 4px 0;
+  border: none;
+  background: #40444b;
+  color: white;
+}
+
+#video {
+  width: 300px;
+  background: #202225;
+  padding: 10px;
+}
+
+video {
+  width: 100%;
+  border: 1px solid #7289da;
+}
